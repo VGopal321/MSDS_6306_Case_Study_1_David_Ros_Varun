@@ -449,8 +449,7 @@ testAle%>%ggplot(aes(ABV,IBU,color=IPAorALE))+
         axis.title.y = element_text(face="bold", color = "dodgerblue3", size = 9))
 
 ```
-
-The accuracy of this specific model was 0.8837, the sensitivity was 0.8835, and the specificity was 0.8839.
+We tested a variety of k from 1 through 30 for our knn model over 500 iterations to find the optimal average accuracy, specificity and sensitivity. The optimal k was found to be 4 but we decided to use k=3 since an odd k was more reasonable. We split the merged datasets into a 70-30 training and test set and found that the accuracy of this specific model was 0.8837, the sensitivity was 0.8835, and the specificity was 0.8839.
 
 
 ```{r}
@@ -468,7 +467,7 @@ testAle%>%mutate(AlePredictions)%>%
 
 ```
 
-It appears IBU and ABV levels is very accurate at explaining whether or not a beverage is an IPA or an ale.
+Above shows the scatterplot of the predicted classifications of either Ale or IPA. It appears IBU and ABV levels is very accurate at explaining whether or not a beverage is an IPA or an ale.
 
 
 <font size="6"> Question 9: Number of Beers per Brewery per State</font>
