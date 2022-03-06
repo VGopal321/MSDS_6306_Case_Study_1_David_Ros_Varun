@@ -26,3 +26,5 @@
 **Case_Study_Final.pptx**: Final team powerpoint with YouTube links
 
 **Case Study Final.rmd**: RMarkdown file with code answering questions and plots leveraged in PPT
+
+**Case-Study-Final.html**: Final HTML of RMarkdown file.  We all attempted to load this html file multiple times so that it looks the same as the knit html from RStudio.  However, the formatting did not stay as the clean version with the plots and summarized answers.
